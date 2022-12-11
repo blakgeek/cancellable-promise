@@ -1,5 +1,5 @@
 {
-  "name": "@byzzer/cancellable-promise",
+  "name": "@blakgeek/cancellable-promise",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -10,6 +10,7 @@
     "dist",
     "src"
   ],
+
   "engines": {
     "node": ">=10"
   },
