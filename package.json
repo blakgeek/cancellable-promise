@@ -1,0 +1,57 @@
+{
+  "name": "@byzzer/cancellable-promise",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": "https://github.com/blakgeek/cancellable-promise",
+  "description": "A functional cancellable promise implementation.",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "author": "blakgeek",
+  "module": "dist/cancelable-promise.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/cancelable-promise.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/cancelable-promise.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.1.0",
+    "husky": "^8.0.2",
+    "size-limit": "^8.1.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  }
+}
