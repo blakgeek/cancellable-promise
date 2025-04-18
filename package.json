@@ -36,14 +36,14 @@
     "trailingComma": "es5"
   },
   "author": "blakgeek",
-  "module": "dist/cancelable-promise.esm.js",
+  "module": "dist/cancellable-promise.esm.js",
   "size-limit": [
     {
-      "path": "dist/cancelable-promise.cjs.production.min.js",
+      "path": "dist/cancellable-promise.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/cancelable-promise.esm.js",
+      "path": "dist/cancellable-promise.esm.js",
       "limit": "10 KB"
     }
   ],
